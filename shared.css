@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav {
+  background-color: rgb(148, 0, 211);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-inline-start: 35px;
+  padding-block: 20px;
+  box-shadow: 0 0 10px rgba(148, 0, 211, 0.5);
+  z-index: 100;
+}
+
+.main-nav > a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.card-container {
+  margin: 150px auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.card {
+  width: 375px;
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 0, 211);
+  color: white;
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(148, 0, 211, 0.5);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.c1 {
+  background-image: url("./images/zhewar.PNG");
+}
+
+.c2 {
+  background-image: url("./images/article.png");
+}
+
+.c3 {
+  background-image: url("./images/presenter.png");
+}
+
+.about-container,
+.my-article,
+.broadcast-sage {
+  margin-block-start: 100px;
+}
+
+@media screen and (max-width: 830px) {
+  .card-container {
+    margin-block-start: 100px;
+  }
+}
